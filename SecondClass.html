@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Table</title>
+    <!-- Adding style to the table  width: 100%; -->
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td,tr{
+            border: 1px solid black
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a table -->
+    <table>
+        <!-- Adding a caption -->
+        <caption>This is my caption</caption>
+        <tr>
+            <!-- Adding header -->
+            <th>Name</th>
+            <th>Family Name</th>
+            <th>Phone Number</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <!-- Adding data corresponding the header -->
+            <td>George</td>
+            <td>Paul</td>
+            <td>785126845</td>
+            <td>56</td>
+        </tr>
+        <tr>
+            <td>Daniel</td>
+            <!-- merge 2 rows: rowspan='2' -->
+            <td rowspan='2'>Grand</td>
+            <td>9562155</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>Richard</td>
+            <td>4569523</td>
+            <td>90</td>
+        </tr>
+    </table>&nbsp &nbsp
+<!-- second example -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Paul</td>
+                <td>784512562</td>
+            </tr>
+            <tr>
+                <td>dani</td>
+                <td>9632212</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- Merge 2 colums: use of colspan='2'-->
+                <td colspan='2'>Brown</td>
+            </tr>
+        </tfoot>
+    </table>&nbsp &nbsp
+
+    <!-- Third example: Merge row and colum -->
+     <table>
+        <tr>
+            <th rowspan='2'>Name</th>
+            <th colspan='2'>Marks</th>
+        </tr>
+        <tr>
+            <th>Maths</th>
+            <th>Prog</th>
+        </tr>
+        <tr>
+            <td>Dani</td>
+            <td>90</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Dan</td>
+            <td colspan="2" rowspan="2">79</td>
+        </tr>
+        <tr>
+            <td>rich</td>
+        </tr>
+     </table>
+</body>
+</html>

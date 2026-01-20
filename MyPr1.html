@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My prog1</title>
+    <!--To make text in the center-->
+    <style>
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h2>Student skills Form</h2>
+    <form>
+        <label>Student Name</label>
+        <input type="text" id="name" /><br>
+    </div>
+        <!-- selection Checkbox -->
+        <input type="checkbox" id="css" >
+        <label >CSS</label><br>
+
+         <input type="checkbox" id="java" >
+        <label >JAVA</label><br>
+
+        <p>select your program : </p>
+
+         <input type="radio" id="cs" name="program" >
+        <label >Computer Science</label><br>
+
+         <input type="radio" id="IS" name="program" >
+        <label >Information System</label><br>
+
+         <input type="radio" id="f" name="program" >
+        <label >Fashion</label><br>
+
+<!--dropdown option -->
+        <p>select your teacher :</p>
+
+        <!--size to show you number of options in the dropdown list 
+        Also have multiple selection enabled -->
+        <select id= "teacher" >
+            <option value="" disabled selected>Choose your teacher</option>
+            <option value="Pargol Poshtareh">Pargol Poshtareh</option>
+            <option value="Ali Rezaei">Ali Rezaei</option>
+            <option value="Maryam Moradi">Maryam Moradi</option>
+            <option value="Ali Ahmadi">Ali Ahmadi</option>
+
+        </select><br><br>
+       
+        <!-- option 1 -->
+        <select name="semester">
+            <optgroup label="Fall">
+                <option value="sept">September</option>
+                    <option value="oct">October</option>
+            </optgroup>
+
+            <!-- option 2 -->
+            <optgroup label="Winter">
+                <option value="jan">January</option>
+                <option value="feb">February</option>
+
+        </select>
+
+        <input type="submit" value="Submit" />
+
+    </form>
+    <!--To add a video -->
+    <p>My video :</p>
+    <video width="500" height="500" controls loop autoplay >
+        <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <!-- To add audio-->
+        <p>My Audio :</p>
+        <audio controls loop autoplay >
+            <source src="audio.mp3" type="audio/mp3">
+            </audio><br><br>
+
+            <!-- Adding a Youtube video 
+             (Right click on the youtube video and select embed code then paste it here)
+              -->
+             <iframe width="1062" height="597" src="https://www.youtube.com/embed/hf3xSn3w23M" 
+             title="&#39;NOW&#39;S THE TIME&#39;: Exec reveals the &#39;reality&#39; happening in Iran"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Table</title>
+</head>
+<body>
+    <h1> &#128202; Complex Table (Rowspan & Colspan)</h1>
+    <p>This table uses multiple row spans and column spans.</p>
+
+    <table border="1" width="100%" cellpadding="10" cellspacing="0">
+        
+        <tr>
+            <th colspan="7">Student Course Schedule</th>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Student Name</th>
+            <th rowspan="2">ID</th>
+            <th colspan="5">Courses</th>
+        </tr>
+
+        <tr>
+            <th>Math</th>
+            <th>Science</th>
+            <th>Programming</th>
+            <th>Art</th>
+            <th>Sports</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Alice</td>
+            <td rowspan="2">1001</td>
+            <td>90</td>
+            <td>85</td>
+            <td>88</td>
+            <td>&#127912;</td>
+            <td>&#9917;</td>
+        </tr>
+        <tr>
+            <td colspan="2">Lab Work</td>
+            <td>92</td>
+            <td></td>
+            <td>&#127936;</td>
+        </tr>
+
+        <tr>
+            <td>Bob</td>
+            <td>1002</td>
+            <td>78</td>
+            <td rowspan="2">80</td>
+            <td>85</td>
+            <td>&#127917;</td>
+            <td rowspan="2">&#127946;</td>
+        </tr>
+
+        <tr>
+            <td>Charlie</td>
+            <td>1003</td>
+            <td>Special Project</td>
+            <td>90</td>
+            <td>&#9999;&#65039;</td>
+            
+        </tr>
+
+        <tr>
+            <th colspan="2">Total Students</th>
+            <th colspan="5">3</th>
+        </tr>
+
+    </table>
+
+</body>
+</html>

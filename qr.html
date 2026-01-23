@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code</title>
+
+    <!-- QR Code Library -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Scan to View Image</h2>
+<div id="qrcode"></div>
+
+<script>
+    new QRCode(document.getElementById("qrcode"), {
+        text: "qrimage.html",
+        width: 220,
+        height: 220
+    });
+</script>
+</body>
+</html>

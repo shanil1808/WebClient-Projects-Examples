@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>QR Code Image</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- QR Code Library -->
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        background: #111;
+        color: white;
+        text-align: center;
+    }
+    img {
+        max-width: 90%;
+        border-radius: 12px;
+    }
+</style>
+</head>
+
+<body>
+
+<div id="content"></div>
+
+<script>
+    const content = document.getElementById("content");
+    const imageURL = "https://i.pinimg.com/736x/3d/4c/07/3d4c0704a83c7fd091224cc22295655e.jpg";
+
+    // If opened via QR scan
+    if (window.location.search.includes("show=image")) {
+        content.innerHTML = `<img src="${imageURL}" alt="Scanned Image">`;
+    } 
+    // Show QR code
+    else {
+        content.innerHTML = `<h2>Scan the QR Code</h2><div id="qrcode"></div>`;
+
+        new QRCode(document.getElementById("qrcode"), {
+            text: window.location.href + "?show=image",
+            width: 220,
+            height: 220
+        });
+    }
+</script>
+</head>
+<body>
+    
+</body>
+</html>

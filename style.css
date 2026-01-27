@@ -1,0 +1,80 @@
+/*
+#fh{
+    color: cadetblue;
+    font-size: 50;
+    background-color: blue;
+}
+
+#sh{
+    color: coral;
+    font-size: 40;
+    background-color: azure;
+}
+
+#th{
+    color: darkgray;
+    font-size: 30;
+    background-color: black;
+}
+    /*/
+
+.b1{
+    color: #00ff50;
+    background-color: black;
+}
+
+.b2{
+    color: hsl(166, 47%, 50%);
+    background-color: rgb(255, 57, 57);
+}
+
+body{
+    background-image: url("dog4.jpg");
+    background-size: cover;
+}
+
+h2{
+    color: chartreuse
+}
+/*
+color in css -> RGB / HSL / HEX / COLOR NAME
+
+RGB -> Red Green Blue (0-255) (v,v,v)
+HSL -> Hue Saturation Lightness (0-360) (0%-100%,0%-100%)
+HEX -> #ff7485 -> red green blue (00-ff)(00-ff)(00-ff)
+
+*/
+
+p{
+    border: 10px inset black;
+    border-width: 6px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+#para{
+    color:#00ff50;
+    margin: 10px 10px 100px 50px; /* top right bottom left */
+}
+span{
+    border: 1px solid black;
+    margin: 100px 200px 300px;
+}
+/* or margin-right: 140px;
+    margin-left: 100px;
+    margin-bottom: 400px;
+}*/
+a{
+    border: 3px solid red;
+    margin: 30px 70px; /* top&bottom right&left */
+}
+
+    h3{
+        border: 3px solid black;
+        border-radius: 50px;
+        margin: 25px 30px 100px; /* top right&left bottom */
+    }
+    h5{
+        margin: 400px; /* top right bottom left */
+    }

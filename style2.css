@@ -1,0 +1,40 @@
+h1{
+    border: 2px solid black;
+}
+    
+
+h2{
+    border: 2px solid black;
+   /* padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 400px;
+    */
+    padding: 10px 10px 100px 50px; /* top right bottom left */
+}
+h3{
+    border: 2px solid black;
+    padding: 30px 70px; /* top&bottom right&left */
+
+    /*padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 400px;
+    */
+    padding: 10px 10px 100px 50px; /* top right bottom left */
+}
+h4{
+    border: 2px solid black;
+    padding: 30px 70px; /* top&bottom right&left */
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+.mydiv{
+    border: 3px solid black;
+    align-content: center;
+    margin: 40px;
+    background-color: purple;
+}

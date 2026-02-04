@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f2f2f2;
+}
+
+.topbar {
+    background: #2f455a;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    background: #2f455a;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.main {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    width: 420px;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.section h4 {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+label {
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #c5c1c1;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none;
+}
+
+.inline {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-register {
+    background: green;
+    color: white;
+}
+
+.btn-clear {
+    background: #6c757d;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+    <strong>Student Portal</strong>
+    <div>
+        <a href="StudentPortal.html">Registration</a>
+        <a href="MyCourse.html">Courses</a>
+        <a href="StudentProfile.html">Profile</a>
+        <a href="">Logout</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="sidebar">
+        <a href="StudentPortal.html">Register Course</a>
+        <a href="MyCourse.html">My Courses</a>
+        <a href="StudentProfile.html">Profile</a>
+    </div>
+
+    <div class="main">
+        <div class="card">
+
+            <h2>Course Registration</h2>
+
+            <div class="section">
+                <h4>Student Information</h4>
+
+                <label><b>Student ID</b></label>
+                <input type="text" placeholder="e.g. 20251234">
+
+                <label><b>Full Name</b></label>
+                <input type="text" placeholder="Enter full name">
+
+                <label><b>Email</b></label>
+                <input type="email" placeholder="student@email.com">
+            </div>
+
+            <div class="section">
+                <h4>Course Selection</h4>
+
+                <label><b>Program</b></label>
+                <select>
+                    <option>Select program</option>
+                    <option>Computer Science</option>
+                    <option>Information Technology</option>
+                </select>
+
+                <label><b>Course</b></label>
+                <select>
+                    <option>Select course</option>
+                    <option>Web Development</option>
+                    <option>Database Systems</option>
+                </select>
+
+                <label><b>Study Mode</b></label>
+                <div class="inline">
+                    <label><input type="radio" name="mode"> In-Person</label>
+                    <label><input type="radio" name="mode"> Online</label>
+                </div>
+            </div>
+
+            <div class="section">
+                <h4>Additional Preferences</h4>
+
+                <label><b>Tools Experience</b></label>
+                <div class="inline">
+                    <label><input type="checkbox"> VS Code</label>
+                    <label><input type="checkbox"> IntelliJ</label>
+                    <label><input type="checkbox"> Visual Studio</label>
+                </div>
+
+                <label><b>Comments</b></label>
+                <textarea rows="3" placeholder="Any special requests or notes..."></textarea>
+            </div>
+
+            <div class="buttons">
+                <button class="btn-register">Register Course</button>
+                <button class="btn-clear" type="reset">Clear</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

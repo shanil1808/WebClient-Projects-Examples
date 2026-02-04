@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            background-color: rgb(14, 8, 131);
+        }
+        .test{
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: brown;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn{
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .dropdownContent{
+            display: none;
+            position: absolute;
+            background-color: gray;
+            min-width: 150px;
+        }
+        .dropdown:hover.dropdownContent{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="test">
+            <a href>Home</a>
+            <a href>About Us</a>
+            <a href>Contact Us</a>
+        </div>
+    </nav>
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdownContent">
+            <p>profile</p>
+            <p>setting</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labs2</title>
+ <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #e6e7ea;
+        }
+       
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .navbar {
+            background-color: #3f51b5;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+
+        .navbar h1 {
+            color: white;
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .nav-links {
+            margin-top: 12px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 16px;
+            padding: 6px 10px;
+            border-radius: 6px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #e0e0e0;
+        }
+
+        .container {
+            margin: 40px auto;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 14px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            color: #3f51b5;
+            margin-top: 0;
+        }
+
+        .highlight {
+            color: green;
+            font-weight: bold;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .circle-list {
+            list-style-type: circle;
+        }
+        .circle-list li::marker {
+            color: blue;
+         }
+
+        .buttons {
+            margin-top: 15px;
+        }
+
+        .btn {
+            background-color: #3f51b5;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 0 5px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2c3aa8;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="navbar">
+            <h1>Information Portal</h1>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+      
+        <div class="container">
+
+            <div class="card">
+                <h2>Overview</h2>
+                <p>
+                    This page presents general information in a structured and readable format.
+                </p>
+                <p class="highlight">
+                    Key ideas are highlighted to draw attention where appropriate.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Details</h2>
+                <p>The information is organized into logical parts for ease of understanding.</p>
+                <ul class="circle-list">
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                    <li>Fourth item</li>
+                </ul>
+
+                <div class="buttons">
+                    <button class="btn">Learn More</button>
+                    <button class="btn">Continue</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Notes</h2>
+                <p>Supplementary content appears here to support the main information.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

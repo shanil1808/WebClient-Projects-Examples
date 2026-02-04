@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page</title>
+<style>
+/*Global*/
+ 
+ 
+body {
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 30px;
+    color: #222;
+}
+ 
+header {
+    background-color: #3f51b5;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+ 
+ 
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+ 
+nav a:hover {
+    background-color: rgba(255,255,255);
+    color: #222;
+}
+ 
+.content,
+.note {
+    max-width: 900px;
+    margin: 30px auto auto auto;
+}
+ 
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+    border: 1px solid #ddd;
+}
+.card h2 {
+    color: #3f51b5;
+}
+ 
+.emphasis {
+    color: #2e7d32;
+    font-weight: bold;
+    font-style: italic;
+}
+ 
+ul {
+    list-style-type: circle;
+    padding-left: 30px;
+}
+ 
+li {
+    margin-bottom: 8px;
+}
+ 
+li::marker {
+    color:  #5466c8;
+}
+ 
+.actions a {
+    text-decoration: none;
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+ 
+.actions a:hover {
+    background-color: #6cd74c;
+}
+ 
+</style>
+</head>
+ 
+<body>
+ 
+<header>
+    <h1>Information Portal</h1>
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+    </nav>
+</header>
+ 
+<div class="content">
+ 
+    <div class="card">
+        <h2>Overview</h2>
+        <p>
+            This page presents general information in a structured and readable format.
+        </p>
+        <p class="emphasis">
+            Key ideas are highlighted to draw attention where appropriate.
+        </p>
+    </div>
+ 
+    <div class="card">
+        <h2>Details</h2>
+        <p>
+            The information is organized into logical parts for ease of understanding.
+        </p>
+ 
+        <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Fourth item</li>
+        </ul>
+ 
+        <div class="actions">
+            <a href="">Learn More</a>
+            <a href="">Continue</a>
+        </div>
+    </div>
+ 
+</div>
+ 
+<div class="note">
+ 
+    <div class="card">
+        <h2>Notes</h2>
+        <p>
+            Supplementary content appears here to support the main information.
+        </p>
+    </div>
+ 
+</div>
+ 
+ 
+</body>
+</html>

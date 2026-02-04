@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            padding: 40px;
+        }
+        .Cont{
+            max-width: 700px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 25px;
+            color: brown;
+        }
+        .formRow{
+            margin: 20px;
+        }
+        label{
+            display: block;
+            font-weight: bold;
+            color: rgb(31, 84, 86)
+        }
+        input[type=text],
+        input[type=email],
+        input[type=password],
+        select,textarea{
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 40px;
+        }
+        .RadioGroup label , Checkbox label{
+            display: inline-block;
+            margin-right: 20px;
+            font-weight: normal;
+        }
+        .RadioGroup input , .Checkbox input{
+            text-align: center;
+            display: inline-block;
+        }
+        .buttons{
+            text-align: center;
+        }
+        button{
+            background-color: cadetblue;
+            color: white;
+            padding: 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <h2>This is Registration Form</h2>
+        <form>
+            <div class="formRow">
+                <label>First Name: </label>
+                <input type="text" placeholder="Please Enter First Name">
+                <label>Last Name: </label>
+                <input type="text" placeholder="Please Entre Last Name">
+            </div>
+            <div class="formRow">
+                <label>Email: </label>
+                <input type="email" placeholder="Please Enter Email">
+                <label>Password: </label>
+                <input type="password" placeholder="Please Enter Password">
+            </div>
+            <div class="formRow">
+                <label>Country: </label>
+                <select>
+                    <option selected disabled>Select Your Country</option>
+                    <option>Canada</option>
+                    <option>USA</option>
+                    <option>Iran</option>
+                    <option>France</option>
+                </select>
+            </div>
+            <div class="formRow">
+                <label>Gender: </label>
+                <div class="RadioGroup">
+                    <label>
+                        <input type="radio" name="gender">
+                        "Make"
+                    </label>
+                    <label>
+                        <input type="radio" name="gender">
+                        "FeMale"
+                    </label>
+                    <label>
+                        <input type="radio" name="gender">
+                        "Other"
+                    </label>
+                </div>
+            </div>
+            <div class="formRow">
+                <label>Skills: </label>
+                <div class="Checkbox">
+                    <label>
+                        <input type="checkbox">
+                        "HTML"
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        "CSS"
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        "JAVA"
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        "C#"
+                    </label>
+                </div>
+            </div>
+            <div class="formRow">
+                <label>Tell me about yourself: </label>
+                <textarea placeholder="tell us ...."></textarea>
+            </div>
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
